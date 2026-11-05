@@ -1,0 +1,10 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.example.mafia",
+    "sha256_cert_fingerprints": [
+      "3E:6E:1B:19:CA:23:9F:A9:B2:EB:C0:A5:AE:FE:AE:89:DB:E5:F7:2B:1B:29:C6:8C:B3:3D:B0:E4:07:56:AA:83"
+    ]
+  }
+}]
