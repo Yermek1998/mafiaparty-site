@@ -1,0 +1,9 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [{
+      "appID": "77729M7R3Y.com.jannatfirdays.Mafia",
+      "paths": ["/join", "/join/*"]
+    }]
+  }
+}
