@@ -1,0 +1,4 @@
+document.getElementById('print').addEventListener('click',()=>window.print());
+document.getElementById('back-top').addEventListener('click',event=>{event.preventDefault();window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});});
+const links=[...document.querySelectorAll('aside nav a')];
+if('IntersectionObserver' in window){const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting){links.forEach(link=>{const active=link.hash==='#'+entry.target.id;link.classList.toggle('active',active);if(active)link.setAttribute('aria-current','location');else link.removeAttribute('aria-current');});}}},{rootMargin:'-5% 0px -65% 0px'});document.querySelectorAll('article section').forEach(section=>observer.observe(section));}
