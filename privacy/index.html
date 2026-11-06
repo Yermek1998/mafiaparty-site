@@ -32,7 +32,7 @@
         <p class="tagline">Your role is a secret. Our data practices shouldn’t be.</p>
         <p class="description">How Mafia handles your information, and the choices you have.</p>
         <div class="meta">
-          <span>UPDATED NOVEMBER 4, 2026</span>
+          <span>UPDATED NOVEMBER 6, 2026</span>
           <span>ENGLISH</span>
           <button type="button" id="print">Print document ↗</button>
         </div>
@@ -73,7 +73,7 @@
           <div class="section-no">01 /</div>
           <div>
             <h2 id="h-overview">The short version</h2>
-            <p>Mafia is a multiplayer social deduction game provided by <strong>Yermek Seidualy</strong> (“we”, “us”). This policy explains how personal information is handled when you use the iOS app, its multiplayer features, this website, or contact us.</p>
+            <p>Mafia is a multiplayer social deduction game provided by <strong>Yermek Seidualy</strong> (“we”, “us”). This policy explains how personal information is handled when you use the iOS or Android app, its multiplayer features, this website, or contact us.</p>
             <p>You choose a display name rather than registering with an email address or password. Multiplayer play still involves data: room activity, messages, an optional avatar, and audio when you use voice chat.</p>
           </div>
         </section>
@@ -83,13 +83,13 @@
           <div>
             <h2 id="h-information">Information we process</h2>
             <ul>
-              <li><strong>Player profile:</strong> your chosen display name, a generated profile identifier, and an optional avatar. Your name, preferences, profile identifier, and room membership are stored on your device.</li>
+              <li><strong>Player profile:</strong> your chosen display name, a generated profile identifier, and an optional avatar. Your name, preferences, profile identifier, and room membership are stored on your device. Anonymous authentication identifiers and access tokens are also processed to authenticate requests to our services.</li>
               <li><strong>Multiplayer activity:</strong> room codes and identifiers, player identifiers, room settings, readiness, assigned roles, night actions, votes, game state, and timestamps are processed to run and synchronize matches.</li>
               <li><strong>Text chat:</strong> messages, player names and identifiers, room identifiers, and message timestamps are sent to our backend so participants can see the discussion.</li>
               <li><strong>Avatar images:</strong> an image you select is resized and stored locally and uploaded to cloud storage. Uploaded avatars have public URLs; anyone with the URL may be able to view the image. Do not upload sensitive images.</li>
-              <li><strong>Voice chat:</strong> microphone audio is transmitted through Agora to participants in your voice channel when your microphone is enabled. Channel and user identifiers and technical connection information are processed to provide the call.</li>
-              <li><strong>Purchases:</strong> Apple processes payments. The app uses StoreKit purchase and entitlement information to determine Premium access and restore purchases. We do not receive your full payment-card details.</li>
-              <li><strong>Support and technical data:</strong> information you send by email, and connection or service logs processed by our hosting and communication providers, may include IP addresses, device or network information, timestamps, and errors.</li>
+              <li><strong>Voice chat:</strong> when your microphone is enabled, microphone audio is transmitted to participants in your voice channel through LiveKit software hosted on servers managed by us at livekit.mafiaparty.click. Room and player identifiers, anonymous authentication credentials, temporary voice-access tokens, IP addresses, and technical connection information are processed to authenticate participants and provide voice communication.</li>
+              <li><strong>Purchases on iOS:</strong> Apple processes payments. The iOS app uses StoreKit purchase and entitlement information to determine Premium access and restore purchases. We do not receive your full payment-card details.</li>
+              <li><strong>Support and technical data:</strong> information you send by email, and connection or service logs processed by our backend, server-hosting, and communication infrastructure, may include IP addresses, device or network information, timestamps, and errors.</li>
             </ul>
           </div>
         </section>
@@ -98,7 +98,7 @@
           <div class="section-no">03 /</div>
           <div>
             <h2 id="h-use">Why we use it</h2>
-            <p>We use information to create and join rooms, identify players, deliver chat and voice, synchronize gameplay, display avatars, remember preferences, provide purchased features, answer requests, troubleshoot faults, and protect the service from misuse.</p>
+            <p>We use information to create and join rooms, identify and authenticate players, deliver chat and voice, synchronize gameplay, display avatars, remember preferences, provide purchased features, answer requests, troubleshoot faults, and protect the service from misuse.</p>
             <p>Where applicable data-protection law requires a legal basis, processing necessary to deliver the game is based on our agreement with you; security and service operation rely on legitimate interests; legal compliance relies on legal obligations; and optional processing that requires consent relies on your consent. You can withdraw consent without affecting processing already lawfully carried out.</p>
           </div>
         </section>
@@ -111,19 +111,18 @@
 
             <div class="provider">
               <strong>Supabase</strong>
-              <span>Room and game data, text chat, and avatar storage.</span>
+              <span>Room and game data, anonymous authentication, text chat, and avatar storage.</span>
               <a href="https://supabase.com/privacy">Privacy notice ↗</a>
             </div>
 
             <div class="provider">
-              <strong>Agora</strong>
-              <span>Real-time voice transport and related technical data.</span>
-              <a href="https://www.agora.io/en/privacy-policy/">Privacy notice ↗</a>
+              <strong>Self-hosted LiveKit infrastructure</strong>
+              <span>Real-time voice communication uses LiveKit software hosted on servers managed by us at livekit.mafiaparty.click. Our server-hosting provider processes network traffic and technical information as needed to host and secure this infrastructure.</span>
             </div>
 
             <div class="provider">
               <strong>Apple</strong>
-              <span>App distribution, purchases, and subscription management.</span>
+              <span>iOS app distribution, purchases, and subscription management.</span>
               <a href="https://www.apple.com/legal/privacy/">Privacy notice ↗</a>
             </div>
 
@@ -137,12 +136,12 @@
             <h2 id="h-controls">Your controls</h2>
             <ul>
               <li>Change your display name or remove your avatar in the app’s Settings. Removing an avatar also requests deletion of its cloud copy.</li>
-              <li>Mute your microphone in the game or revoke microphone access in iOS Settings. Voice participation requires microphone permission.</li>
+              <li>Mute your microphone in the game or revoke microphone access in your device’s iOS or Android settings. Transmitting your voice requires microphone permission.</li>
               <li>Choose which photo to share using the system photo picker. Selecting an avatar does not give the app unrestricted access to your photo library.</li>
               <li>Leave a room or stop using the app. Removing the app does not automatically delete cloud records or cancel an Apple subscription.</li>
               <li>Manage sound, haptics, and language in the app.</li>
             </ul>
-            <p>The current app does not include an audio-recording feature, advertising SDK, or a request for precise device location. Voice providers still process technical data needed to operate their services.</p>
+            <p>The current apps do not include an audio-recording feature, advertising SDK, or a request for precise device location. Our self-hosted voice infrastructure and server-hosting provider process technical connection data needed to operate and secure voice chat. Other participants may still record what they hear using their own devices.</p>
           </div>
         </section>
 
@@ -169,7 +168,7 @@
           <div class="section-no">08 /</div>
           <div>
             <h2 id="h-young-players">Younger players</h2>
-            <p>Follow the age rating displayed for Mafia in your App Store region. If you are not old enough to consent to the relevant data processing or enter an agreement under local law, a parent or guardian must be involved where required. Parents or guardians who believe a child has provided personal information inappropriately should contact us to request review and deletion where applicable.</p>
+            <p>Follow the age rating displayed for Mafia in the app store for your region. If you are not old enough to consent to the relevant data processing or enter an agreement under local law, a parent or guardian must be involved where required. Parents or guardians who believe a child has provided personal information inappropriately should contact us to request review and deletion where applicable.</p>
           </div>
         </section>
 
